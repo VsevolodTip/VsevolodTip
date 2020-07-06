@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Нажми на кнопку и скажи "Привет!"</h2>
+        <button class="talk"><i class="fas fa-microphone"></i></button>
+        <h3 class="content"></h3>
+    </div>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            color:rgb(39, 37, 37);
+            margin-bottom: 30px;
+        }
+        h3{
+            display: none;
+        }
+        .talk {
+            width: 30px;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer; 
+            outline: none;
+        }
+        .talk:hover {
+            background: rgb(175, 170, 170);
+            color: #fff;
+        }
+    </style>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
